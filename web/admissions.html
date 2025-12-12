@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Admissions - EverLite Global University</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===========================
+   COLORS (NO CSS VARIABLES)
+   =========================== */
+
+body {
+    margin:0;
+    font-family:Poppins, Arial;
+
+    background:
+      linear-gradient(rgba(255,255,255,0.80),rgba(255,255,255,0.85)),
+      url('https://images.unsplash.com/photo-1581091870621-2d7c3c1a1c40?auto=format&fit=crop&w=1200&q=60');
+
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+
+header {
+    background:#0b3d91;   /* directly using color */
+    padding:18px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header a {
+    color:white;
+    text-decoration:none;
+    padding:8px 12px;
+    background:rgba(255,255,255,0.2);
+    border-radius:8px;
+}
+
+/* ===========================
+   MAIN CARD
+   =========================== */
+
+main {
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.card {
+    background:#ffffff;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color:#0b3d91;
+}
+
+.lead {
+    color:#6b7280;
+}
+
+/* list */
+ul.clean {
+    list-style:none;
+    padding:0;
+}
+
+ul.clean li {
+    background:#f3f6ff;
+    padding:12px;
+    margin:8px 0;
+    border-radius:10px;
+    display:flex;
+    gap:12px;
+}
+
+.dot {
+    background:#0b3d91;  /* direct color */
+    width:32px;
+    height:32px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:6px;
+}
+
+/* buttons */
+.actions{margin-top:20px;}
+
+.btn {
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.btn-primary {
+    background:#0b3d91;
+    color:white;
+}
+
+.btn-outline {
+    border:2px solid #0b3d91;
+    color:#0b3d91;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>EverLite Global University</h1>
+    <a href="index.html">← Home</a>
+</header>
+
+<main>
+<div class="card">
+
+<h2>Admissions</h2>
+<p class="lead">Apply for the 2026 intake. Check eligibility & required documents.</p>
+
+<h3>Eligibility</h3>
+<ul class="clean">
+<li><div class="dot">1</div><div>12th Pass with 60% minimum</div></li>
+<li><div class="dot">2</div><div>Entrance Exam score</div></li>
+<li><div class="dot">3</div><div>Personal Interview</div></li>
+</ul>
+
+<h3>Required Documents</h3>
+<ul class="clean">
+<li><div class="dot">A</div><div>Marksheet</div></li>
+<li><div class="dot">B</div><div>TC / LC</div></li>
+<li><div class="dot">C</div><div>Photo ID</div></li>
+<li><div class="dot">D</div><div>Passport Photos</div></li>
+</ul>
+
+<h3>How to Apply</h3>
+<ol>
+<li>Create account</li>
+<li>Fill form</li>
+<li>Upload documents</li>
+<li>Pay fee & submit</li>
+</ol>
+
+<div class="actions">
+<a class="btn btn-primary" href="registerpage.html">Apply Online</a>
+</div>
+
+</div>
+</main>
+
+</body>
+</html>

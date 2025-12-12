@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EverLite Global University</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family:'Poppins',sans-serif;
+  background:#f2f4f8;
+  color:#333;
+}
+
+/* Header */
+header {
+  background:#0b3d91;
+  color:white;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+header h2 { margin:0; }
+
+nav a {
+  margin-left:20px;
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+  padding:8px 15px;
+  border-radius:5px;
+}
+
+nav a:hover { background:rgba(255,255,255,0.2); }
+
+.login-btn {
+  background:white;
+  color:#0b3d91;
+  font-weight:600;
+}
+
+.login-btn:hover { background:#dfe7ff; }
+
+/* Hero Section */
+.hero {
+  background:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1950&q=100') center/cover no-repeat;
+  height:500px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero h1 { font-size:52px; text-shadow:0 3px 6px rgba(0,0,0,0.5); }
+.hero p { font-size:20px; margin-top:15px; text-shadow:0 3px 6px rgba(0,0,0,0.5); }
+
+/* Features Section */
+.features, .courses, .admissions, .testimonials {
+  padding:60px 20px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}
+
+.feature, .course-card, .testimonial {
+  width:280px;
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  text-align:center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature img, .course-card img, .testimonial img { width:80px; margin-bottom:10px; }
+
+.feature h3, .course-card h3, .testimonial h3 { color:#0b3d91; margin-bottom:8px; }
+
+.feature p, .course-card p, .testimonial p { font-size:15px; }
+
+.feature:hover, .course-card:hover, .testimonial:hover {
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Courses Section */
+.courses { gap:20px; justify-content:flex-start; flex-wrap:wrap; }
+
+/* Admissions Section */
+.admissions { flex-direction:column; text-align:center; background:#eef2ff; border-radius:12px; padding:40px; }
+
+/* Testimonials */
+.testimonials { gap:20px; }
+
+/* Footer */
+footer {
+  background:#0b3d91;
+  padding:30px 20px;
+  color:white;
+  text-align:center;
+  margin-top:40px;
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:36px;}
+  .hero p{font-size:18px;}
+  .features, .courses, .testimonials { justify-content:center; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>EverLite Global University</h2>
+  <nav>
+    <a href="admissions.html">Admissions</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+    <a class="login-btn" href="loginpage.html">Login</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div>
+    <h1>Welcome to EverLite Global University</h1>
+    <p>Your future begins here with world-class education</p>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <div class="feature">
+    <img src="https://cdn-icons-png.flaticon.com/512/1826/1826668.png" />
+    <h3>Modern Campus</h3>
+    <p>World-class infrastructure with smart classrooms and labs.</p>
+  </div>
+  <div class="feature">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" />
+    <h3>Quality Education</h3>
+    <p>Programs designed to build strong careers and future leaders.</p>
+  </div>
+  <div class="feature">
+    <img src="https://cdn-icons-png.flaticon.com/512/1827/1827345.png" />
+    <h3>Research & Innovation</h3>
+    <p>Encouraging students to explore, research, and innovate.</p>
+  </div>
+  <div class="feature">
+    <img src="https://cdn-icons-png.flaticon.com/512/2910/2910762.png" />
+    <h3>Scholarships</h3>
+    <p>Merit-based and need-based scholarships for deserving students.</p>
+  </div>
+  <div class="feature">
+    <img src="https://cdn-icons-png.flaticon.com/512/2910/2910819.png" />
+    <h3>Extracurriculars</h3>
+    <p>Clubs, sports, and cultural activities for holistic development.</p>
+  </div>
+</section>
+
+<!-- Courses Overview -->
+<section class="courses">
+  <div class="course-card">
+    <h3>B.Tech in Computer Science</h3>
+    <p>Learn modern software engineering, AI, and cloud computing.</p>
+  </div>
+  <div class="course-card">
+    <h3>MBA - Finance</h3>
+    <p>Build skills to excel in business and corporate management.</p>
+  </div>
+  <div class="course-card">
+    <h3>M.Sc Physics</h3>
+    <p>Advanced studies in classical and modern physics.</p>
+  </div>
+  <div class="course-card">
+    <h3>Diploma in Design</h3>
+    <p>Creative courses in fashion, graphics, and interior design.</p>
+  </div>
+</section>
+
+<!-- Admissions CTA -->
+<section class="admissions">
+  <h2>Apply Now</h2>
+  <p>Take the first step toward your dream career. Admissions are open!</p>
+  <a href="admissions.html" style="padding:15px 30px; background:#0b3d91; color:white; text-decoration:none; border-radius:8px;">Apply Now</a>
+</section>
+
+<!-- Student Testimonials -->
+<section class="testimonials">
+  <div class="testimonial">
+    <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" />
+    <h3>Priya Sharma</h3>
+    <p>"EverLite transformed my career! The faculty and campus are amazing."</p>
+  </div>
+  <div class="testimonial">
+    <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" />
+    <h3>Rahul Verma</h3>
+    <p>"Great environment for learning, research, and personal growth."</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 EverLite Global University — All Rights Reserved | <a href="contact.html" style="color:white;">Contact</a>
+</footer>
+
+</body>
+</html>
